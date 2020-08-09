@@ -1,3 +1,5 @@
+/* jshint esversion: 10 */
+
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
