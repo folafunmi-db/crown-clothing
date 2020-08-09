@@ -8,7 +8,7 @@ import "./menu-item.styles.scss";
  */
 
 // Destructuring the title off of the props
-const MenuItem = ({ title, imageUrl }) => (
+const MenuItem = ({ title, imageUrl, size }) => (
 	/** React provides every markup element with a css
 	 * property of 'style' and it takes an object that has
    * prop values equal to css values that are to be applied
@@ -18,7 +18,7 @@ const MenuItem = ({ title, imageUrl }) => (
 		style={{
 			backgroundImage: `url(${imageUrl})`,
 		}}
-		className="menu-item"
+		className={`${size} menu-item`}
 	>
 		<div className="content">
 			<h1 className="title">{title}</h1>
