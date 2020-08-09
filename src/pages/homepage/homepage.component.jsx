@@ -1,6 +1,7 @@
 /*jshint esversion: 10 */
 
 import React from 'react';
+import './homepage.styles.scss';
 
 /** A functional component because no lifecycle methods 
  * are needed this point, neither does the state need to
