@@ -11,15 +11,16 @@ import "./menu-item.styles.scss";
 const MenuItem = ({ title, imageUrl, size }) => (
 	/** React provides every markup element with a css
 	 * property of 'style' and it takes an object that has
-   * prop values equal to css values that are to be applied
-   * 
-   * And css values would be in camelCase */
-	<div
-		style={{
-			backgroundImage: `url(${imageUrl})`,
-		}}
-		className={`${size} menu-item`}
-	>
+	 * prop values equal to css values that are to be applied
+	 *
+	 * And css values would be in camelCase */
+	<div className={`${size} menu-item`}>
+		<div
+			className="background-image"
+			style={{
+				backgroundImage: `url(${imageUrl})`,
+			}}
+		/>
 		<div className="content">
 			<h1 className="title">{title.toUpperCase()}</h1>
 			<span className="subtitle">SHOP NOW</span>
