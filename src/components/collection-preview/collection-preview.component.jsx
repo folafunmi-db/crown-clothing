@@ -3,15 +3,17 @@
 import React from "react";
 import "./collection-preview.styles.scss";
 
-const ColectionPreview = ({ title, items }) => (
+const CollectionPreview = ({ title, items }) => (
 	<div className="collection-preview">
 		<h1 className="title">{title.toUpperCase()}</h1>
 		<div className="preview">
-			{items.map((item) => (
-				<div key={item.id}>{item.name}</div>
-			))}
+			{items
+				.filter((_, idx) => idx < 4)
+				.map((item) => (
+					<div key={item.id}>{item.name}</div>
+				))}
 		</div>
 	</div>
 );
 
-export default ColectionPreview;
+export default CollectionPreview;
