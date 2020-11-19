@@ -4,7 +4,7 @@ import React from "react";
 import "./directory.styles.scss";
 import MenuItem from "../menu-item/menu-item.component";
 
-/** This would need to be a class component becuase
+/** This would need to be a class component because
  * we'd need to store the state values that we'd use
  * to create the class component with
  */
