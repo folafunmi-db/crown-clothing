@@ -7,7 +7,7 @@ import { ReactComponent as Logo } from "../../assets/crown.svg";
 import { auth } from "../../firebase/firebase.utils";
 import { connect } from "react-redux";
 
-/**destructure the currentUse prop that's passed into the
+/**destructure the currentUser prop that's passed into the
  * header from App.js
  */
 const Header = ({ currentUser }) => (
